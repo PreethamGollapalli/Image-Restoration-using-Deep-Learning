@@ -38,16 +38,6 @@ So what we will focused on:
   2. NIND: https://commons.wikimedia.org/wiki/Natural_Image_Noise_Dataset#Tools
 
 ---
-- Noisy Images
-
-<img src="https://github.com/Shakib-IO/Diminishing_Image_Noise_Using_Deep_Learning/blob/main/Noisy%20Images/NOISY_SRGB_010.PNG" alt="" width="400" height="350">   <img src="https://github.com/Shakib-IO/Diminishing_Image_Noise_Using_Deep_Learning/blob/main/Noisy%20Images/NOISY__SRGB_010.PNG" alt="" width="400" height="350">
-
----
-- GT Images
-
-<img src="https://github.com/Shakib-IO/Diminishing_Image_Noise_Using_Deep_Learning/blob/main/GT%20images/GT_SRGB_010.PNG" alt="" width="400" height="350">   <img src="https://github.com/Shakib-IO/Diminishing_Image_Noise_Using_Deep_Learning/blob/main/GT%20images/GT__SRGB_010.PNG" alt="" width="400" height="350">
-
----
 -  Feedback on EDA<br>
     - So, analyzing the dataset, we can see that most photos have been clicked on iPhone 7, Samsung S6 and Google Pixel. LG G4 has the least number of photos.<br>And the ISO level for each smartphone’s images are a total of 14 unique ISO level settings used in the dataset. Most of the photos are clicked at a low ISO setting.<br>Shutter speed for each smartphone’s images Most of the photos are clicked at 100 shutter speed, followed by 400 and      800.<br>The higher the shutter speed darker, the image will be, and vice-versa. Brightness level for each smartphone’s images The majority of the photos are clicked in Normal brightness mode.
 
@@ -59,10 +49,6 @@ So what we will focused on:
 **Network Architecture**
 
 Multi-level wavelet-CNN architecture. It consists two parts: the contracting and expanding subnetworks. Each solid box corresponds to a multi-channel feature map. And the number of channels is annotated on the top of the box. The network depth is 24. Moreover, our MWCNN can be further extended to higher level (e.g., ≥ 4) by duplicating the configuration of the 3rd level subnetwork.
-
-<img src = "https://raw.githubusercontent.com/lpj0/MWCNN/master/images/Architecture.png">
-
-<br>
 
 [Paper Link](https://arxiv.org/abs/1805.07071)
 
